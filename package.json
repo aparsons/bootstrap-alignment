@@ -1,0 +1,32 @@
+{
+  "name": "bootstrap-alignment",
+  "version": "1.0.0",
+  "description": "Responsive alignment for Bootstrap",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aparsons/bootstrap-alignment.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "css"
+  ],
+  "contributors": [
+    "Adam Parsons"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aparsons/bootstrap-alignment/issues"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^1.3.3",
+    "gulp-sourcemaps": "^1.5.1"
+  }
+}

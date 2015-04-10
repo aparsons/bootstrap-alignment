@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap-alignment",
+  "version": "1.0.0",
+  "homepage": "https://github.com/aparsons/bootstrap-alignment",
+  "authors": [
+    "Adam Parsons"
+  ],
+  "description": "Responsive alignment for Bootstrap",
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.4"
+  }
+}

@@ -1,0 +1,42 @@
+@mixin responsive-pull($parent, $float) {
+  #{$parent} {
+    float: $float !important;
+  }
+}
+
+// Pull Right
+
+@media (max-width: $screen-xs-max) {
+  @include responsive-pull('.pull-right-xs', right);
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  @include responsive-pull('.pull-right-sm', right);
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  @include responsive-pull('.pull-right-md', right);
+}
+
+@media (min-width: $screen-lg-min) {
+  @include responsive-pull('.pull-right-lg', right);
+}
+
+
+// Pull Left
+
+@media (max-width: $screen-xs-max) {
+  @include responsive-pull('.pull-left-xs', left);
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  @include responsive-pull('.pull-left-sm', left);
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  @include responsive-pull('.pull-left-md', left);
+}
+
+@media (min-width: $screen-lg-min) {
+  @include responsive-pull('.pull-left-lg', left);
+}
