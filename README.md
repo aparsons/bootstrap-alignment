@@ -2,6 +2,8 @@
 
 Adds responsive alignment to Bootstrap
 
+To get started, check out our [examples and documentation](https://rawgit.com/aparsons/bootstrap-alignment/master/examples.html).
+
 ## Quick Start
 
 Several quick start options are available:
