@@ -7,6 +7,8 @@ Adds responsive alignment to Bootstrap
 Several quick start options are available:
 
 - [Download the latest release](#).
+- Clone the repo: `git clone https://github.com/aparsons/bootstrap-alignment.git`.
+- Install with [Bower](http://bower.io): `bower install bootstrap-alignment`.
 
 ## Copyright and License
 
