@@ -8,7 +8,7 @@ To get started, check out our [examples and documentation](https://rawgit.com/ap
 
 Several quick start options are available:
 
-- [Download the latest release](#).
+- [Download the latest release](https://github.com/aparsons/bootstrap-alignment/releases/latest).
 - Clone the repo: `git clone https://github.com/aparsons/bootstrap-alignment.git`.
 - Install with [Bower](http://bower.io): `bower install bootstrap-alignment`. (Not yet available)
 
