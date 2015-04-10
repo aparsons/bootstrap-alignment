@@ -10,6 +10,10 @@ Several quick start options are available:
 - Clone the repo: `git clone https://github.com/aparsons/bootstrap-alignment.git`.
 - Install with [Bower](http://bower.io): `bower install bootstrap-alignment`.
 
+## Bugs and Feature Requests
+
+Have a bug or a feature request? Please first search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/aparsons/bootstrap-alignment/issues/new).
+
 ## Copyright and License
 
 - Copyright 2015 [Adam Parsons](https://github.com/aparsons)
