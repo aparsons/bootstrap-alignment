@@ -1,0 +1,45 @@
+@mixin margin($parent, $side, $margin) {
+  #{$parent} {
+    margin-#{$side}: $margin !important;
+  }
+}
+
+@mixin margin-responsive($parent, $side, $margin) {
+
+  @media (max-width: $screen-xs-max) {
+    @include margin(#{$parent}-xs, $side, $margin);
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @include margin(#{$parent}-sm, $side, $margin);
+  }
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @include margin(#{$parent}-md, $side, $margin);
+  }
+
+  @media (min-width: $screen-lg-min) {
+    @include margin(#{$parent}-lg, $side, $margin);
+  }
+
+}
+
+// Margin Bottom
+
+@include margin('.margin-bottom', bottom, $line-height-computed);
+@include margin-responsive('.margin-bottom', bottom, $line-height-computed);
+
+// No Margin Bottom
+
+@include margin('.no-margin-bottom', bottom, 0);
+@include margin-responsive('.no-margin-bottom', bottom, 0);
+
+// Margin Top
+
+@include margin('.margin-top', top, $line-height-computed);
+@include margin-responsive('.margin-top', top, $line-height-computed);
+
+// No Margin Top
+
+@include margin('.no-margin-top', top, 0);
+@include margin-responsive('.no-margin-top', top, 0);

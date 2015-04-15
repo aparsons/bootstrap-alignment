@@ -1,7 +1,27 @@
-@mixin responsive-text-align($parent, $text-align) {
+@mixin text-align($parent, $text-align) {
   #{$parent} {
     text-align: $text-align;
   }
+}
+
+@mixin text-align-responsive($parent, $text-align) {
+
+  @media (max-width: $screen-xs-max) {
+    @include text-align(#{$parent}-xs, $text-align);
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @include text-align(#{$parent}-sm, $text-align);
+  }
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @include text-align(#{$parent}-md, $text-align);
+  }
+
+  @media (min-width: $screen-lg-min) {
+    @include text-align(#{$parent}-lg, $text-align);
+  }
+
 }
 
 @mixin responsive-nowrap($parent) {
@@ -10,77 +30,10 @@
   }
 }
 
-// Text Left
-
-@media (max-width: $screen-xs-max) {
-  @include responsive-text-align('.text-left-xs', left);
-}
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  @include responsive-text-align('.text-left-sm', left);
-}
-
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  @include responsive-text-align('.text-left-md', left);
-}
-
-@media (min-width: $screen-lg-min) {
-  @include responsive-text-align('.text-left-lg', left);
-}
-
-// Text Center
-
-@media (max-width: $screen-xs-max) {
-  @include responsive-text-align('.text-center-xs', center);
-}
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  @include responsive-text-align('.text-center-sm', center);
-}
-
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  @include responsive-text-align('.text-center-md', center);
-}
-
-@media (min-width: $screen-lg-min) {
-  @include responsive-text-align('.text-center-lg', center);
-}
-
-// Text Right
-
-@media (max-width: $screen-xs-max) {
-  @include responsive-text-align('.text-right-xs', right);
-}
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  @include responsive-text-align('.text-right-sm', right);
-}
-
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  @include responsive-text-align('.text-right-md', right);
-}
-
-@media (min-width: $screen-lg-min) {
-  @include responsive-text-align('.text-right-lg', right);
-}
-
-// Text Justify
-
-@media (max-width: $screen-xs-max) {
-  @include responsive-text-align('.text-justify-xs', justify);
-}
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  @include responsive-text-align('.text-justify-sm', justify);
-}
-
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  @include responsive-text-align('.text-justify-md', justify);
-}
-
-@media (min-width: $screen-lg-min) {
-  @include responsive-text-align('.text-justify-lg', justify);
-}
+@include text-align-responsive('.text-left', left);
+@include text-align-responsive('.text-center', center);
+@include text-align-responsive('.text-right', right);
+@include text-align-responsive('.text-justify', justify);
 
 // Text No Wrap
 

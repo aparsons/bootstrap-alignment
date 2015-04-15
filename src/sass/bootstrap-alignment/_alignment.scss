@@ -1,41 +1,28 @@
-@mixin responsive-pull($parent, $float) {
+@mixin pull($parent, $float) {
   #{$parent} {
     float: $float !important;
   }
 }
 
-// Pull Right
+@mixin pull-responsive($parent, $float) {
 
-@media (max-width: $screen-xs-max) {
-  @include responsive-pull('.pull-right-xs', right);
+  @media (max-width: $screen-xs-max) {
+    @include pull(#{$parent}-xs, $float);
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @include pull(#{$parent}-sm, $float);
+  }
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    @include pull(#{$parent}-md, $float);
+  }
+
+  @media (min-width: $screen-lg-min) {
+    @include pull(#{$parent}-lg, $float);
+  }
+
 }
 
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  @include responsive-pull('.pull-right-sm', right);
-}
-
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  @include responsive-pull('.pull-right-md', right);
-}
-
-@media (min-width: $screen-lg-min) {
-  @include responsive-pull('.pull-right-lg', right);
-}
-
-// Pull Left
-
-@media (max-width: $screen-xs-max) {
-  @include responsive-pull('.pull-left-xs', left);
-}
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  @include responsive-pull('.pull-left-sm', left);
-}
-
-@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  @include responsive-pull('.pull-left-md', left);
-}
-
-@media (min-width: $screen-lg-min) {
-  @include responsive-pull('.pull-left-lg', left);
-}
+@include pull-responsive('.pull-left', left);
+@include pull-responsive('.pull-right', right);
