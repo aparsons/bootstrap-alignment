@@ -24,7 +24,7 @@
 
 }
 
-@mixin responsive-nowrap($parent) {
+@mixin nowrap($parent) {
   #{$parent} {
     white-space: nowrap;
   }
@@ -38,17 +38,17 @@
 // Text No Wrap
 
 @media (max-width: $screen-xs-max) {
-  @include responsive-nowrap('.text-nowrap-xs');
+  @include nowrap('.text-nowrap-xs');
 }
 
 @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  @include responsive-nowrap('.text-nowrap-sm');
+  @include nowrap('.text-nowrap-sm');
 }
 
 @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-  @include responsive-nowrap('.text-nowrap-md');
+  @include nowrap('.text-nowrap-md');
 }
 
 @media (min-width: $screen-lg-min) {
-  @include responsive-nowrap('.text-nowrap-lg');
+  @include nowrap('.text-nowrap-lg');
 }
