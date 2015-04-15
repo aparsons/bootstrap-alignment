@@ -8,7 +8,8 @@
     <title>Bootstrap Alignment Examples</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://rawgit.com/aparsons/bootstrap-alignment/master/dist/bootstrap-alignment.min.css">
+    <link rel="stylesheet" href="dist/bootstrap-alignment.min.css">
+    <!--<link rel="stylesheet" href="https://rawgit.com/aparsons/bootstrap-alignment/master/dist/bootstrap-alignment.min.css">-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,7 +25,7 @@
           <h1>Bootstrap Alignment <small>Examples</small></h1>
         </div>
       </div>
-
+      <!-- Responsive Alignment -->
       <div class="row">
         <div class="col-md-12">
           <h2>Responsive Alignment</h2>
@@ -38,16 +39,15 @@
             </thead>
             <tbody>
               <tr>
-                <td><code>.pull-right-*</code></td>
-                <td><code>float: right;</code></td>
-              </tr>
-              <tr>
                 <td><code>.pull-left-*</code></td>
                 <td><code>float: left;</code></td>
               </tr>
+              <tr>
+                <td><code>.pull-right-*</code></td>
+                <td><code>float: right;</code></td>
+              </tr>
             </tbody>
           </table>
-          
         </div>
       </div>
       <div class="row">
@@ -87,6 +87,64 @@
             </div>
             <div class="panel-body">
               <pre>&lt;span class=&quot;<mark>pull-right-xs</mark>&quot;&gt;.pull-right-xs&lt;/span&gt;</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Responsive Text -->
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Responsive Text</h2>
+          <p>The following classes allow you to realign text using the <a href="http://getbootstrap.com/css/#grid" target="_blank">bootstrap viewports</a> (xs, sm, md, lg):</p>
+          <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th class="col-xs-6">Group of classes</th>
+                <th class="col-xs-6">CSS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>.text-left-*</code></td>
+                <td><code>text-align: left;</code></td>
+              </tr>
+              <tr>
+                <td><code>.text-center-*</code></td>
+                <td><code>text-align: center;</code></td>
+              </tr>
+              <tr>
+                <td><code>.text-right-*</code></td>
+                <td><code>text-align: right;</code></td>
+              </tr>      
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Demonstration (Resize your browser)</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="text-center-xs"><code>.text-center-xs</code></div>
+                  <div class="text-center-sm"><code>.text-center-sm</code></div>
+                  <div class="text-center-md"><code>.text-center-md</code></div>
+                  <div class="text-center-lg"><code>.text-center-lg</code></div>
+                </div>
+              </div>
+            </div>
+          </div>         
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Code</h3>
+            </div>
+            <div class="panel-body">
+              <pre>&lt;div class=&quot;<mark>text-center-md</mark>&quot;&gt;.text-center-md&lt;/div&gt;</pre>
             </div>
           </div>
         </div>
