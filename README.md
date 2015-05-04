@@ -19,4 +19,4 @@ Have a bug or a feature request? Please first search for existing and closed iss
 ## Copyright and License
 
 - Copyright 2015 [Adam Parsons](https://github.com/aparsons)
-- [Licensed under MIT](https://github.com/aparsons/bootstrap-alignment/blob/master/README.md).
+- [Licensed under MIT](https://github.com/aparsons/bootstrap-alignment/blob/master/LICENSE.md).
